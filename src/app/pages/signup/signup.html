@@ -1,0 +1,92 @@
+
+<ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" mode="ios"></ion-back-button>
+     </ion-buttons>
+  </ion-toolbar>
+  <div class="signup-logo">
+    <img src="assets/img/ucono-blanco.png" alt="Ionic Logo">
+    <p>
+      Registrate
+    </p>
+  </div>
+
+  <form [formGroup]="formGroup">
+    <ion-list lines="none">
+      <ion-item [ngClass]="{'errorInput': errorControl.name.errors?.required && !errorControl.name.pristine}">
+        <ion-label position="stacked" >Usuario *</ion-label>
+        <ion-input formControlName="name" placeholder="Ingrese usuario *" inputmode="text" type="text">
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p *ngIf="errorControl.name.errors?.required && !errorControl.name.pristine" class="ion-padding-start">
+          Usuario es requerido
+        </p>
+      </ion-text>
+
+      <ion-item [ngClass]="{'errorInput': errorControl.email.errors?.pattern}">
+        <ion-label position="stacked" >Correo Electronico *</ion-label>
+        <ion-input formControlName="email" placeholder="Correo Electronico *" inputmode="email" type="email">
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="!errorControl.email.errors?.pattern" class="ion-padding-start">
+          Ingrese un correo valido
+        </p>
+      </ion-text>
+      <ion-item [ngClass]="{'errorInput': errorControl.password.errors?.minlength}">
+        <ion-label position="stacked" >Contraseña *</ion-label>
+        <ion-input formControlName="password" placeholder="Ingrese Contraseña *" inputmode="password" type="password">
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="!errorControl.password.errors?.minlength" class="ion-padding-start">
+          Contraseña debe contener mínimo 6 caracteres
+        </p>
+      </ion-text>
+      <ion-item [ngClass]="{'errorInput': errorControl.confirm_password.value != errorControl.password.value && !errorControl.confirm_password.pristine}">
+        <ion-label position="stacked" >Repetir Contraseña *</ion-label>
+        <ion-input formControlName="confirm_password" inputmode="password" type="password" placeholder='Repite la contraseña *'>
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="errorControl.confirm_password.value != errorControl.password.value && !errorControl.confirm_password.pristine" class="ion-padding-start">
+          Las contraseñas deben coincidir
+        </p>
+      </ion-text>
+      <p>
+        o con tu red social
+      </p>
+      <section>
+        <ion-row>
+          <ion-col size='6'>
+          <ion-button color="google" size="large" mode='ios' fill="outline">
+            <ion-icon slot="start" src="./../../../assets/img/google.svg"></ion-icon>
+            GOOGLE
+          </ion-button>
+          </ion-col>
+          <ion-col size='6'>
+          <ion-button color="facebook" size="large" mode='ios'>
+            <ion-icon slot="start" src="./../../../assets/img/facebook.svg"></ion-icon>
+            FACEBOOK
+          </ion-button>
+          </ion-col>
+        </ion-row>
+      </section>
+    </ion-list>
+    <ion-button expand="block" class="finalUser second" mode='ios'>ACEPTAR
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </ion-button>
+    <ion-item>
+    <ion-checkbox color="primary" mode="md"></ion-checkbox>
+    <ion-label class="terms">Acepto los 
+     <b> términos y condiciones
+    </b>
+     </ion-label>
+  </ion-item>
+  <p class="login">¿Ya tienes una cuenta? <b> Ingresa </b></p>
+  </form>
+  
+</ion-content>
+

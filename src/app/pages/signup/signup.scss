@@ -1,0 +1,82 @@
+.signup-logo {
+  min-height: 130px;
+  text-align: center;
+
+  p {
+    font: Regular 21px/26px Quicksand;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+}
+
+ion-col{
+  text-align: center;
+  ion-button{
+    --border-radius: 20px;
+    font: Book 20px/22px Quicksand;
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: 1rem;
+  }
+}
+p{
+  font: Semibold 15px/20px Open Sans;
+letter-spacing: 0px;
+color: #000000;
+text-align: center;
+}
+
+ion-label{
+  font: Bold 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #000000;
+}
+
+.signup-logo img {
+  max-width: 150px;
+}
+
+ion-toolbar {
+  --background: transparent;
+}
+
+ion-content {
+  --background: linear-gradient(90deg, rgba(255, 36, 36, 1) 0%, rgba(255, 187, 0, 1) 80%);
+  padding: .5rem;
+}
+
+.list {
+  margin-bottom: 0;
+
+}
+ion-list{
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px; 
+ 
+}
+form{
+  background: white;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 100%;
+  padding: 0 1rem;
+  box-shadow: 0px -3px 15px #00000029;
+}
+ion-checkbox{
+  --border-radius:5px;
+}
+
+.terms{
+  text-align: right;
+  letter-spacing: 0px;
+  color: #C0C0C0;
+}
+.login{
+text-align: center;
+letter-spacing: 0px;
+b{
+  color: #FFBB00;
+}
+}

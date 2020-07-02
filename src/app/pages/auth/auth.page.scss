@@ -1,0 +1,25 @@
+.logo {
+  top: 118px;
+  width: 333px;
+  height: 167px;
+  position: relative;
+  margin: 0 auto;
+}
+
+ion-button {
+    --ion-color-base: white !important;
+    margin: 0.5rem .5rem;
+  }
+  
+  .finalUser {
+    --background: linear-gradient(90deg, rgba(255, 36, 36, 1) 0%, rgba(255, 187, 0, 1) 80%);
+  }
+
+  .food{
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    transform: matrix(1, 0.09, -0.09, 1, 0, 0);
+    bottom: -60%;
+    background: transparent url('./../../../assets/img/food-burger.png') 0% 0% no-repeat padding-box;
+  }

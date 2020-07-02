@@ -1,0 +1,53 @@
+<ion-content>
+  <ion-toolbar mode='ios'>
+    <ion-buttons slot="start">
+     <ion-back-button text="" icon="arrow-back" mode='ios'></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-button color='primary' (click)="startApp()">SALTAR</ion-button>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Recomiendo</ion-title>
+  </ion-toolbar>
+
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="true">
+    
+    <ion-slide>
+    
+      <h2 class="slide-title">
+       <b> ¡Bienvenidos!</b>
+      </h2>
+      <p>
+        Todos hemos tenido un amigo que hace las mejores empanadas del mundo y hemos querido ayudarlo a promocionar su producto, con RECOMIENDO lo vamos a poder hacer.
+      </p>
+      <img src="assets/img/recomendar-lugares.png" class="slide-image" />
+     
+      <ion-icon name="arrow-forward" class="arrow-right"></ion-icon>
+
+    </ion-slide>  
+    <ion-slide>
+    
+      <h2 class="slide-title">
+       <b> ¡Interactúa y gana!</b>
+      </h2>
+      <p>
+        Cada vez que interactúes con el App vas obteniendo puntos, puntos que puedes utilizar para reclamar tus comidas favoritas totalmente gratis, hacer recargas de tu celular o donarlos a una buena causa.
+      </p>
+      <img src="assets/img/premio.png" class="slide-image" />
+     
+      
+      <ion-icon name="arrow-back" class="arrow-left"></ion-icon>
+
+    </ion-slide>
+  
+  </ion-slides>
+
+
+</ion-content>
+<ion-footer class="ion-no-border">
+     
+
+  
+</ion-footer>

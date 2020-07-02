@@ -1,0 +1,83 @@
+ion-toolbar {
+  --background: transparent;
+  --border-color: transparent;
+}
+
+ion-content {
+  --background: linear-gradient(90deg, rgba(255, 36, 36, 1) 0%, rgba(255, 187, 0, 1) 80%);
+  padding: .5rem;
+}
+
+.container {
+  background: white;
+  box-shadow: 0px -3px 15px #00000029;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 114%;
+  padding: 0 1rem;
+}
+
+ion-title {
+  font: Regular 21px/26px Quicksand;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.whatsapp {
+  font: Bold 20px/25px Quicksand;
+  letter-spacing: 0px;
+  --background: #1ED302;
+  --background-activated: #1ED302;
+}
+
+.sms {
+  font: Bold 20px/25px Quicksand;
+  letter-spacing: 0px;
+  --background: #2196F3;
+  --background-activated: #2196F3;
+}
+
+.gmail {
+  font: Bold 20px/25px Quicksand;
+  letter-spacing: 0px;
+  --color: #000000;
+  --border-color: #DADADA;
+}
+
+ion-button {
+  font: Bold 20px/25px Quicksand;
+  letter-spacing: 0px;
+  margin: 1rem 0;
+}
+
+p {
+  font: Bold 18px/24px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: center;
+  padding-top: 1rem;
+}
+.container-qr{
+    background: white;
+    box-shadow: 0px 0px 15px #00000029;
+    border-radius: 30px;
+    padding: 0 1rem;
+    height: auto;
+    p{
+        text-align: center;
+        font: Light 18px/24px Open Sans;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+    img{
+    display: block;
+    margin: 0 auto;
+    }
+    .id{
+        text-align: center;
+        font: Regular 28px/35px Quicksand;
+        letter-spacing: 0px;
+        color: #FF8800;
+    }
+}

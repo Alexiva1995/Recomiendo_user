@@ -1,0 +1,48 @@
+
+<ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="ios-arrow-back"></ion-back-button>
+     </ion-buttons>
+  </ion-toolbar>
+  <div class="signup-logo">
+    <img src="assets/img/ucono-blanco.png" alt="Ionic Logo">
+    <p>
+      Iniciar sesión
+    </p>
+  </div>
+
+  <form [formGroup]="formGroup">
+    <ion-list>
+    <ion-item [ngClass]="{'errorInput': errorControl.email.errors?.pattern}">
+        <ion-label position="stacked" >Usuario *</ion-label>
+        <ion-input formControlName="email" placeholder="Correo Electronico *" inputmode="email" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger" [hidden]='!errorControl.email.errors?.pattern'>
+        <p  class="ion-padding-start">
+          Ingrese un correo Valido
+        </p>
+      </ion-text>
+
+        <ion-item [ngClass]="{'errorInput': errorControl.password.errors?.minlength}">
+        <ion-label position="stacked" >Contraseña *</ion-label>
+        <ion-input formControlName="password" placeholder="mot de passe *" inputmode="password" type={{type}}>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger" [hidden]='!errorControl.password.errors?.minlength'>
+        <p class="ion-padding-start">
+          Contraseña debe contener mínimo 6 caracteres
+        </p>
+      </ion-text>
+    </ion-list>
+
+    <ion-button expand="block" class="finalUser second" mode='ios' (click)="signIn()" [disabled]="formGroup.status == 'INVALID'">INGRESAR
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </ion-button>
+  <p class="login" (click)="goTo('/signup')">¿Aun no tienes una cuenta? <b> Regístrate </b></p>
+  </form>
+
+</ion-content>

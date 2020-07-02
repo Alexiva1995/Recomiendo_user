@@ -1,0 +1,85 @@
+ion-toolbar {
+  --background: transparent;
+  --border-color: transparent;
+}
+
+.swiper-slide {
+  display: block;
+}
+
+.slide-title {
+  margin-top: 2.8rem;
+}
+
+.slide-image {
+  max-height: 45%;
+/*   max-width: 60%; */
+  margin: 36px 0;
+  pointer-events: none;
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  text-align: center;
+  font: Light 15px/20px Open Sans;
+  letter-spacing: 0px;
+  color: #C0C0C0;
+  padding: 0 40px;
+  font-size: .8rem;
+  b {
+    color: var(--ion-text-color, #000000);
+  }
+}
+
+ion-content {
+  --background: linear-gradient(90deg, rgba(255, 36, 36, 1) 0%, rgba(255, 187, 0, 1) 80%);
+  padding: .5rem;
+}
+
+ion-slides {
+  height: 91%;
+  background: white;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  box-shadow: 0px -3px 15px #00000029;
+
+  .swiper-pagination{
+    position: relative !important;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+
+ion-title {
+  color: white;
+  font: Regular 21px/26px Quicksand;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+
+ion-button {
+  --ion-color-base: white !important;
+  margin: 0.5rem .5rem;
+}
+
+.finalUser {
+  --background: linear-gradient(90deg, rgba(255, 36, 36, 1) 0%, rgba(255, 187, 0, 1) 80%);
+}
+.second{
+  margin-top: 1.7rem;
+}
+.arrow-right{
+  position: absolute;
+  top: 94%;
+  right: 10%;
+}
+.arrow-left{
+  position: absolute;
+  top: 93.5%;
+  left: 10%;
+}

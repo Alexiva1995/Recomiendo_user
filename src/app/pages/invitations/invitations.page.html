@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-toolbar mode='ios'>
+    <ion-buttons slot="start">
+     <ion-back-button text="" icon="arrow-back" mode='ios'></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+          <img src="./../../../assets/img/mi-espacio.png">
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Invita a tus amigos</ion-title>
+  </ion-toolbar>
+
+  <div class="container">
+      <p>
+        Elige una aplicación
+      </p>
+      <ion-button expand="block" shape="round" mode='ios' class="whatsapp">
+        <ion-icon slot="start" src="./../../../assets/img/whatsapp.svg"></ion-icon>
+        WHATSAPP
+      </ion-button>
+      <ion-button color="facebook" expand="block" shape="round" mode='ios' >
+        <ion-icon slot="start" src="./../../../assets/img/facebook.svg"></ion-icon>
+        FACEBOOK
+      </ion-button>
+      <ion-button class="gmail" expand="block" shape="round" mode='ios' fill="outline">
+        <ion-icon slot="start" src="./../../../assets/img/gmail.svg"></ion-icon>
+        GMAIL
+      </ion-button>
+      <ion-button expand="block" shape="round" mode='ios' class="sms">
+        <ion-icon slot="start" src="./../../../assets/img/sms.svg"></ion-icon>
+        SMS
+      </ion-button>
+
+      <div class="container-qr">
+          <p> Tus amigos también pueden escanear este código QR para seguirte. </p>
+          <img src="./../../../assets/img/codigo-qr.svg">
+          <p class="id">ID 125468D</p>
+      </div>
+  </div>
+</ion-content>
