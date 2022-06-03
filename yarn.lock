@@ -171,10 +171,12 @@
   resolved "https://registry.npm.taobao.org/@angular/compiler/download/@angular/compiler-9.1.11.tgz#4c7100f53c87f47e793e149427b8bdee44302381"
   integrity sha1-THEA9TyH9H55PhSUJ7i97kQwI4E=
 
-"@angular/core@~9.1.11":
-  version "9.1.11"
-  resolved "https://registry.npm.taobao.org/@angular/core/download/@angular/core-9.1.11.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40angular%2Fcore%2Fdownload%2F%40angular%2Fcore-9.1.11.tgz#7a92d27292212ed381be15f9000d4019867f1c7c"
-  integrity sha1-epLScpIhLtOBvhX5AA1AGYZ/HHw=
+"@angular/core@~11.0.5":
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-11.0.5.tgz#b8c448c3cd4f6dae7327cc1ba4ee2aa29c8dbc26"
+  integrity sha512-XAXWQi7R3ucZXQwx9QK5jSKJeQyRJ53u2dQDpr7R5stzeCy1a5hrNOkZLg9zOTTPcth/6+FrOrRZP9SMdxtw3w==
+  dependencies:
+    tslib "^2.0.0"
 
 "@angular/fire@5.4.2":
   version "5.4.2"
